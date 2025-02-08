@@ -101,6 +101,22 @@ span {
 
 /* Mobile responsive: Center menu on small screens */
 @media (max-width: 900px) {
+    #home-section1{
+        margin-top: 80px;
+    }
+    #fomo-section1{
+        margin-top: 80px;
+    }  
+    #hikiko-section1{
+        margin-top: 80px;
+    }  
+    #ansiasociale-section1{
+        margin-top: 80px;
+    }  
+    #prog-section1{
+        margin-top: 80px;
+    }  
+
     .stuff img {
         width: 90%;
         margin-left: 5%;
