@@ -1,13 +1,13 @@
 
 // Load the menu.html file into the div
-fetch('./assets/pages/menu.html')
+fetch('/assets/pages/menu.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('navbar-container').innerHTML = data;
     })
     .catch(error => console.error('Error loading the menu:', error));
 
-    fetch('./assets/pages/footer.html')
+    fetch('/assets/pages/footer.html')
     .then(response => response.text())
     .then(data => {
         document.getElementById('footer').innerHTML = data;
@@ -28,7 +28,7 @@ function loadSections(sectionPrefix) {
             }
 
             let sectionName = parts.slice(1).join('-'); // Get "section1" (or whatever comes after "home-")
-            let filePath = `./assets/pages/${parts[0]}/${sectionName}.html`; // Maps to "assets/pages/home/section1.html"
+            let filePath = `/assets/pages/${parts[0]}/${sectionName}.html`; // Maps to "assets/pages/home/section1.html"
 
 
         fetch(filePath)
@@ -50,14 +50,18 @@ function updateSectionHeight() {
     console.log(navbarHeight);
     // Calculate the new height for sections
     //let newHeight = (window.innerHeight ) - navbarHeight;
-    let newHeight = (window.innerHeight ) - navbarHeight;
+    let newHeight = Math.max(window.innerHeight - navbarHeight, 600);
+
     let sections = document.querySelectorAll('.page-section');
+    let isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
 
     sections.forEach((section, index) => {
         //
         console.log(index);
         if (index === 0) {
+            if (isHomePage){
             section.style.height = `${newHeight}px`; // Set height for all sections
+            }
             section.style.marginTop = `${navbarHeight}px`; // Apply margin-top only to the first section
         } else {
             section.style.marginTop = "0px"; // Reset for other sections
@@ -65,8 +69,6 @@ function updateSectionHeight() {
     });
 }
 
-// Run the function on page load
 window.addEventListener("load", updateSectionHeight);
-
-// Run the function when the window is resized (for responsiveness)
+        // Run the function when the window is resized (for responsiveness)
 window.addEventListener("resize", updateSectionHeight);
