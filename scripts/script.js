@@ -75,5 +75,6 @@ function updateSectionHeight() {
 }
 
 window.addEventListener("load", updateSectionHeight);
-        // Run the function when the window is resized (for responsiveness)
+window.visualViewport?.addEventListener("resize", updateSectionHeight);
+window.addEventListener("scroll", updateSectionHeight); //
 window.addEventListener("resize", updateSectionHeight);
