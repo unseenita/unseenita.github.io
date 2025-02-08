@@ -97,6 +97,8 @@ span {
     padding-right:20px;
 }
 
+
+
 /* Mobile responsive: Center menu on small screens */
 @media (max-width: 900px) {
     .stuff img {
@@ -316,3 +318,5 @@ span {
     background-color: transparent;
     border: none;
 }
+
+

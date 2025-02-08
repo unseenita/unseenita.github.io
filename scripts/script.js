@@ -49,8 +49,13 @@ function updateSectionHeight() {
     let navbarHeight = document.querySelector('.navbar').offsetHeight;
     console.log(navbarHeight);
     // Calculate the new height for sections
-    //let newHeight = (window.innerHeight ) - navbarHeight;
-    let newHeight = Math.max(window.innerHeight - navbarHeight, 600);
+    //let newHeight = (window.innerHeight ) - navbarHeight
+    // ;
+    // Use visualViewport height for better mobile support
+    let viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
+
+    // Calculate the new height, ensuring a minimum of 600px
+    let newHeight = Math.max(viewportHeight - navbarHeight, 600);
 
     let sections = document.querySelectorAll('.page-section');
     let isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
