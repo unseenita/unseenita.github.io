@@ -1,0 +1,211 @@
+
+@font-face {
+    font-family: 'Disto';
+    src: url('/assets/font/disto_Bold.otf') format('opentype');
+    font-weight: 900; /* Black */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Disto';
+    src: url('/assets/font/disto_Bold.otf') format('opentype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Disto';
+    src: url('/assets/font/disto_Regular.otf') format('opentype');
+    font-weight: 400; /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Disto';
+    src: url('/assets/font/disto_Light.otf') format('opentype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+/* Apply different font weights */
+body {
+    font-family: 'Disto', sans-serif;
+    font-weight: 400; /* Default Regular */
+}
+
+h1 {
+    font-family: 'Disto', sans-serif;
+    font-weight: 900; /* Black */
+    
+}
+
+h2 {
+    font-family: 'Disto', sans-serif;
+    font-weight: 400; /* Bold */
+    
+}
+
+p {
+    font-family: 'Disto', sans-serif;
+    font-weight: 400; /* Light */
+}
+
+
+.custom-navbar {
+    background-color: #1e1e1e!important; /* Change to any custom color */
+    padding: 15px 20px;
+}
+
+.navbar .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+.custom-navbar a {
+    color: #fff!important;
+}
+
+.navbar-toggler {
+    border: none; /* Rimuove il bordo */
+}
+
+.page-section{
+    background-color: transparent;
+}
+
+.page-section h1 {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+.page-section h2 {
+    padding-left:20px;
+    padding-right:20px;
+}
+.page-section p {
+    padding-left:20px;
+    padding-right:20px;
+}
+.page-section a {
+    padding-left:20px;
+    padding-right:20px;
+}
+
+/* Mobile responsive: Center menu on small screens */
+@media (max-width: 900px) {
+    .page-section .stuff {
+        display: flex;
+        flex-direction: column; /* Stacks elements vertically */
+        flex-wrap: wrap; /* Allows wrapping on small screens */
+        justify-content: flex-start; /* Aligns content to the top (no effect in column) */
+        align-items: flex-start; /* ✅ Aligns text to the left */
+        text-align: left; /* ✅ Ensures text inside elements is left-aligned */
+        width: 100%; /* Ensure full width */
+    }
+    .stuff h1{
+        margin:0px;
+        font-size: clamp(5vh,6vh, 8vh); /* Auto-resize between 20px and 50px */
+        white-space: nowrap;
+        width: auto; 
+    }
+
+    .stuff-small h1{
+        margin:0px;
+        font-size: clamp(5vh,5.5vh, 7vh); /* Auto-resize between 20px and 50px */
+        white-space: nowrap;
+        width: auto; 
+    }
+
+    .stuff h2{
+        margin:0px;
+        font-size: clamp(3vh, 3.6vh, 5vh); /* Auto-resize between 20px and 50px */
+        white-space: nowrap;
+        width: auto; 
+    }
+
+    .stuff p{
+        font-size: 1rem;
+    }
+
+    .stuff a{
+        text-decoration: none;
+        color: #1e1e1e;
+
+    }
+
+    .footer {
+        margin: 20px;
+    }
+
+    .footer-space {
+        padding-top: 80px;
+    }
+
+    .footer-element {
+        display: flex;
+        flex-direction: column; /* Stacks elements vertically */
+        flex-wrap: wrap; /* Allows wrapping on small screens */
+        justify-content: flex-start; /* Aligns content to the top (no effect in column) */
+        align-items: flex-start; /* ✅ Aligns text to the left */
+        text-align: left; /* ✅ Ensures text inside elements is left-aligned */
+        width: 100%; /* Ensure full width */
+        margin-bottom: 20px;
+    }
+    .footer-element span{
+        font-size: 1rem;
+    }
+    
+    .approfondimento{
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        
+        border-top: 1px solid #1e1e1e; 
+        border-bottom: 1px solid #1e1e1e; 
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* Pushes content to opposite sides */
+        align-items: center;
+    }
+
+    .approfondimento i {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    
+
+   
+    
+    .navbar-nav {
+        text-align: left;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 0px;
+        margin-top: 0px;
+    }
+
+    .navbar-nav li a {
+        padding: 2px;
+    }
+}
+
+
+
+/* Make navbar sticky at the top */
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+/* Style for the menu toggle button */
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+/* Custom style for the toggle icon */
+.navbar-toggler-icon {
+    background-color: transparent;
+    border: none;
+}
