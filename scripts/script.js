@@ -43,36 +43,41 @@ function loadSections(sectionPrefix) {
     });
 }
 
-
 function updateSectionHeight() {
+    // Check if the window width is less than 900px
     // Get the height of the navbar
-    let navbarHeight = document.querySelector('.navbar').offsetHeight;
-    console.log(navbarHeight);
-    // Calculate the new height for sections
-    //let newHeight = (window.innerHeight ) - navbarHeight
-    // ;
+    let navbar = document.querySelector('.navbar');
+    let navbarHeight = navbar ? navbar.offsetHeight : 0; // Ensure navbar exists before accessing its height
+    console.log("Navbar Height:", navbarHeight);
+
     // Use visualViewport height for better mobile support
     let viewportHeight = window.visualViewport ? window.visualViewport.height : window.innerHeight;
 
     // Calculate the new height, ensuring a minimum of 600px
     let newHeight = Math.max(viewportHeight - navbarHeight, 600);
 
+    // Select all sections with the class 'page-section'
     let sections = document.querySelectorAll('.page-section');
     let isHomePage = window.location.pathname === '/' || window.location.pathname === '/index.html';
 
     sections.forEach((section, index) => {
-        //
-        console.log(index);
+        console.log("Section Index:", index);
         if (index === 0) {
-            if (isHomePage){
-            section.style.height = `${newHeight}px`; // Set height for all sections
+            if (isHomePage && window.innerWidth <= 900) {
+                section.style.height = `${newHeight}px`; // Set height only on homepage
             }
             section.style.marginTop = `${navbarHeight}px`; // Apply margin-top only to the first section
         } else {
-            section.style.marginTop = "0px"; // Reset for other sections
+            section.style.marginTop = "0px"; // Reset margin for other sections
         }
     });
 }
+
+// Call the function when the window resizes
+window.addEventListener('resize', updateSectionHeight);
+
+// Call the function on page load
+window.addEventListener('load', updateSectionHeight);
 
 window.addEventListener("load", updateSectionHeight);
 window.visualViewport?.addEventListener("resize", updateSectionHeight);

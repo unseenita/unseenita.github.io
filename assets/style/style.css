@@ -98,9 +98,331 @@ span {
 }
 
 
+.container {
+    display: flex;
+    flex-direction: column; /* Default: stack items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+}
+
+/* ✅ Wrap images in a horizontal row on desktop */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 0px; /* Adjust space between images */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    width: 100%;
+}
+
+/* ✅ Place text in a bottom row */
+.text-row {
+    display: flex;
+    justify-content: center;
+    gap: 0px; /* Adjust spacing between text blocks */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    width: 100%;
+}
+
+/* ✅ Make sure images and text have appropriate width */
+.image-row img {
+    width: 50%; /* Adjust width as needed */
+    height: auto;
+}
+
+
+
+@media (min-width: 901px){
+
+    #fom03 {
+        width: 70%!important;
+        margin-left: 15%;
+    }
+    #hik03 {
+        width: 70%!important;
+        margin-left: 15%;
+    }
+    #hik01{
+        width:70%!important;
+        margin-left:15%;
+    }
+
+    .legend {
+        display: flex;
+        flex-wrap: wrap; /* ✅ Allows items to wrap if they don't fit */
+        gap: 20px; /* ✅ Space between items */
+        align-items: center; /* ✅ Align icons and text vertically */
+    }
+    
+    .legend p {
+        display: flex;
+        align-items: center; /* ✅ Ensures icon and text are aligned */
+        margin: 0; /* ✅ Removes default margins */
+        white-space: nowrap; /* ✅ Prevents breaking inside a single item */
+    }
+
+    h2 b {
+        white-space: normal; /* ✅ Ensures text can wrap */
+        display: inline; /* ✅ Keeps it inline but allows wrapping */
+        font-weight: bold; /* ✅ Ensures bold text */
+    }
+   
+    .stuff-inverted {
+        background-color: #1e1e1e;
+    }
+    .hide-on-mobile {
+        width: 100%!important;
+    }
+    .stuff .text-block-extended p{
+        width: 90%!important;
+        max-width: 100%;
+    }
+
+    .stuff .section-spacer{
+        padding-top:4vh;
+    }
+    
+    .text-block{
+        width: 50%;
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        justify-content: space-between; /* Pushes .approfondimento to the bottom */
+        flex: 1; /* Makes all .text-block elements equal in width */
+        min-height: 100%; 
+    }
+
+    .text-block:first-child {
+        border-right: 1px solid #1e1e1e; /* ✅ Applies border only to the first .text-block */
+    }
+    .text-block img{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .text-block .approfondimento{
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between; /* Pushes content to opposite sides */
+        align-items: center;
+    
+    }
+
+    .text-block .stuff h1, .text-block .stuff h2, .stuff .text-block h1, .stuff .text-block  h2{
+        padding-left: 0px;
+    }
+
+    .text-block .stuff .hdiv, .text-block .stuff .hdiv, .stuff .text-block .hdiv, .stuff .text-block  .hdiv{
+        padding-left: 20px;
+    }
+
+
+    .text-block, .text-block .stuff {
+        flex-grow: 1; /* Allows text content to expand */
+        justify-content: flex-start; /* Aligns content to the top (no effect in column) */
+        display: flex;
+        flex-direction: column; /* Stacks elements vertically */
+        flex-wrap: wrap; /* Allows wrapping on small screens */
+        align-items: flex-start; /* ✅ Aligns text to the left */
+        text-align: left; /* ✅ Ensures text inside elements is left-aligned */
+        width: 100%; /* Ensure full width */
+    }
+
+
+    .hide-on-desktop {
+        display: none!important;
+    }
+
+    .movable-section {
+        flex-direction: column; /* Keeps structure */
+    }
+
+    .image-row {
+        flex-direction: row; /* Align images horizontally */
+    }
+
+    .text-row {
+        flex-direction: row; /* Align text horizontally */
+        justify-content: space-between;
+        align-items: stretch; 
+    }
+    /* #home-section2 .stuff{
+        background-color: red;
+
+    } */
+
+    #home-section2 .stuff {
+        margin-top:40px;
+    }
+
+    #home-section1 .stuff img{
+        width:70%!important;
+    }
+
+    .stuff p {
+        max-width: 60%; /* Allow more width on smaller screens */
+    }
+
+    .stuff .text-block p {
+        max-width: 100%; /* Allow more width on smaller screens */
+    }
+
+
+    .stuff {
+        display: flex;
+        flex-direction: column; /* Default: Stack items vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+        text-align: center;
+        
+    }
+    
+    
+    .stuff h1, .stuff h2 {
+        display: inline; /* Ensures they align in a row */
+        margin-right: 0px; /* Adds spacing between headings */
+        white-space: normal; /* Prevents breaking into multiple lines */
+        padding-left:5px;
+        padding-right:5px;
+    }
+    
+    /* ✅ Align <h2> below <h1> */
+    .stuff h1 + h2 {
+        margin-top: 10px; /* Adds space between h1 and h2 rows */
+    }
+    
+    .stuff a{
+        text-decoration: none;
+        color: #1e1e1e;
+
+    }
+    .approfondimento{
+        font-size: 1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 10px;
+        border-top: 1px solid #1e1e1e; 
+        border-bottom: 1px solid #1e1e1e; 
+        width: 100%;
+        display: flex;
+        justify-content: center; /* Pushes content to opposite sides */
+        align-items: center;
+    }
+
+
+    .approfondimento i {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+    
+    .stuff-inverted .approfondimento{
+        border-top: 1px solid #fff; 
+        border-bottom: 1px solid #fff; 
+        color: #fff;
+    }
+
+
+    .stuff-inverted .approfondimento a{
+        color: #fff;
+        text-decoration: underline;
+    }
+    
+    .stuff-inverted .approfondimento i{
+        color: #fff;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between; /* Distributes elements evenly */
+        align-items: center; /* Aligns elements vertically */
+        flex-wrap: wrap; /* Allows wrapping on smaller screens */
+        padding: 20px;
+
+    }
+    
+    .footer-element:nth-child(3) {
+        padding-left: 10%; /* Applies only to the second .footer-element */
+    }
+    
+    .footer-element {
+        display: flex;
+        flex-direction: column; /* Stacks spans inside each footer-element */
+        text-align: left;
+        padding: 10px;
+        flex: 1; /* Ensures equal width for all elements */
+    }
+
+    .icon-list {
+        width:85%;
+        display: flex;
+        justify-content: space-between; /* Evenly spaces items */
+        align-items: center; /* Aligns items vertically */
+        flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+        gap: 50px; /* Adds space between items */
+        padding-bottom: 40px;
+    }
+
+    /* ✅ Ensure section-icon elements are centered */
+    .section-icon {
+        display: flex;
+        flex-direction: column; /* Keeps the image above the text */
+        align-items: center; /* Centers content */
+        text-align: center; /* Ensures text alignment */
+        flex: 1; /* Makes them take equal space */
+        min-width: 200px; /* Prevents items from shrinking too much */
+    }
+
+    /* ✅ Ensure images are responsive */
+    .section-icon img {
+        width: 70%; /* Adjust size as needed */
+        height: auto;
+        margin-bottom: 10px; /* Adds space below the image */
+    }
+
+    .section-icon h2 {
+        font-size: 1.3rem; /* Adjust size as needed */
+        white-space: normal; /* ✅ Allows text to break onto a new line */
+        word-wrap: break-word; /* ✅ Ensures long words break */
+        overflow-wrap: break-word; /* ✅ Ensures text wrapping works */
+        max-width: 100%; /* ✅ Prevents overflow */
+        text-align: center; /* Centers text */
+    }
+
+
+}
+
+.stuff-inverted{
+    background-color: #1e1e1e;
+}
+
+.stuff-inverted h1{
+    color: #fff;
+}
+.stuff-inverted h2{
+    color: #fff;
+}
+.stuff-inverted p{
+    color: #fff;
+}
+.stuff-inverted span{
+    color: #fff;
+}
 
 /* Mobile responsive: Center menu on small screens */
 @media (max-width: 900px) {
+
+    .opposite-mobile {
+        flex-direction: column-reverse; /* ✅ Swaps the first and second .text-block */
+    }
+
+    .hide-on-mobile {
+        display: none!important;
+    }
+    .text-block{
+        width: 100%;
+    }
+    .image-row {
+        display: none!important;
+    }
+
     #home-section1{
         margin-top: 80px;
     }
@@ -137,6 +459,7 @@ span {
         word-wrap: break-word; /* Ensures words break if necessary */
         overflow-wrap: break-word;
     }
+
     .section-icon img{
         width: 50%;
     }
@@ -153,21 +476,9 @@ span {
         text-align: left; /* ✅ Ensures text inside elements is left-aligned */
         width: 100%; /* Ensure full width */
     }
-    .stuff-inverted{
-        background-color: #1e1e1e;
-    }
-    .stuff-inverted h1{
-        color: #fff;
-    }
-    .stuff-inverted h2{
-        color: #fff;
-    }
-    .stuff-inverted p{
-        color: #fff;
-    }
-    .stuff-inverted span{
-        color: #fff;
-    }
+
+    
+
     .stuff h1{
         margin:0px;
         font-size: clamp(5vh,6vh, 8vh); /* Auto-resize between 20px and 50px */
