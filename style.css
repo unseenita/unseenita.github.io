@@ -61,11 +61,11 @@ body {
 .container,
 .container-lg,
 .container-md,
-.container-sm {
-  width: 100% !important;
-  max-width: 100% !important;
-  padding: 0 !important;
-  margin: 0 !important;
+.container-sm .container-xl{
+  width: 100% ;
+  max-width: 100% ;
+  padding: 0;
+  margin: 0 ;
 }
 
 /* HEADER E NAVBAR */
@@ -185,6 +185,7 @@ body {
     z-index: 10000;
   }
 }
+
 
 /* TESTI */
 .container-pages h1 {
@@ -347,6 +348,7 @@ body {
 
 
 @media (min-width: 1200px) {
+
 
 
   .navbar .nav-link {
