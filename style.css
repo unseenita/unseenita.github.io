@@ -45,20 +45,29 @@ html {
 
 #page {
   font-size: 1rem;
-  width: 100vw;
-  height: 100vh;
+  max-width: 100svw;
 }
+
+
+h1, h2, h3, h4, h5, h6, p {
+  text-wrap: balance;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  font-family: 'disto_Regular', sans-serif;
+  font-family: 'disto', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 /* CONTAINER SEMPRE A TUTTA PAGINA */
-.container,
+/* .container,
 .container-lg,
 .container-md,
 .container-sm .container-xl{
@@ -66,13 +75,14 @@ body {
   max-width: 100% ;
   padding: 0;
   margin: 0 ;
-}
+} */
 
 /* HEADER E NAVBAR */
 .header {
   display: flex;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100%;
   z-index: 3;
   background-color: transparent;
@@ -125,7 +135,13 @@ body {
 
 /* MENU MOBILE A TUTTO SCHERMO */
 @media (max-width: 1199px) {
- 
+   hr{
+    display: flex;
+  transform: rotate(90deg);
+
+    
+   }
+
     /* Hide navbar collapse by default on mobile */
   .navbar.bg-dark .navbar-collapse {
     position: fixed;
@@ -154,7 +170,6 @@ body {
   .navbar.bg-dark .navbar-collapse.show .nav-link {
     display: flex;
     font-size: 2rem;
-    font-family: 'disto_Regular', sans-serif;
     padding: 10px 20px;
     color: #fff;
     text-align: center;
@@ -193,23 +208,20 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   color: #000;
-  font-family: 'disto_Bold', sans-serif;
 }
 
 .container-pages h2 {
   font-size: 1.5rem;
   line-height: 1.5rem;
-  font-weight: 700;
+  font-weight: 400;
   color: #000;
-  font-family: 'disto_Regular', sans-serif;
   padding: 10px 0;
 }
 
 .container-pages p {
   font-size: 1rem;
-  line-height: 1rem;
+  line-height: 120%;
   font-weight: 400;
-  font-family: 'disto_Regular', sans-serif;
   color: #000;
   padding: 10px 0;
   margin: 0;
@@ -236,7 +248,7 @@ body {
   width: 100%;
   aspect-ratio: 1/1;
   /* quadrato su mobile */
-  overflow: hidden;
+  /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -259,8 +271,8 @@ body {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding: 0 10px 30px;
-  font-family: 'disto_Regular', sans-serif;
+  padding: 0 10px;
+  font-weight: 400;
   width: 100%;
 }
 
@@ -310,7 +322,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 40px 10px 10px;
-  font-family: 'disto_Regular', sans-serif;
+  font-weight: 400;
   margin: 0;
   background-color: #262626;
   color: #ffffff;
@@ -333,8 +345,7 @@ body {
   .container-pages a {
     font-size: 1.5rem;
     line-height: 1.5rem;
-    font-family: 'disto_Regular', sans-serif;
-
+    font-weight: 400;
   }
 
   .footer {
@@ -344,6 +355,16 @@ body {
     padding: 40px;
     height: 15vh;
   }
+
+  
+
+  .top-img_2,
+  .top-img_3 {
+    /* height: 90vh; */
+    height: 30svh;
+    /* object-fit: contain; */
+  }
+
 }
 
 
@@ -355,7 +376,7 @@ body {
     color: #ffffff !important;
     display: flex;
     justify-content: center;
-    font-family: 'disto_Regular', sans-serif;
+    font-weight: 400;
   }
 
 
@@ -372,7 +393,7 @@ body {
 
   .link-lan_2,
   .link-lan_3 {
-    padding: 0 40px 30px;
+    padding: 0 40px;
   }
 
 
@@ -380,16 +401,17 @@ body {
   .link-lan_4 a {
     background: #ffffff;
     border-color: #262626;
-    border-style: outset;
+    border-style: solid;
     border-radius: 0;
     padding: 20px 30px;
-    font-family: 'disto_Regular', sans-serif;
+    font-weight: 400;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
     cursor: pointer;
     transition: background 0.2s, color 0.2s;
-    width: 30%;
+    width: 100%;
+    max-width: 30rem;
 
   }
 
@@ -415,16 +437,19 @@ body {
 
   }
 
+
+  .top-img_2,
+  .top-img_3 {
+    /* height: 90vh; */
+    height: 50svh;
+    /* object-fit: contain; */
+  }
+
   /* rettangolare su desktop */
   .top-img_1,
   .top-img_4 {
     aspect-ratio: 16/9;
-  }
-
-  .top-img_2,
-  .top-img_3 {
-    height: 90vh;
-    object-fit: contain;
+   max-height: 70svh;
   }
 
 
@@ -435,7 +460,7 @@ body {
     font-size: 3.5rem;
     line-height: 3.5rem;
     text-align: center;
-    font-family: 'disto_Bold', sans-serif;
+    font-weight: 700;
     color: #000;
   }
 
@@ -444,18 +469,18 @@ body {
     font-size: 2.5rem;
     line-height: 2.5rem;
     text-align: center;
-    font-family: 'disto_Regular', sans-serif;
+    font-weight: 400;
     color: #000;
-    padding: 10px 280px;
+    /* padding: 10px 280px; */
   }
 
   .topic_1 p,
   .topic_4 p {
     font-size: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 120%;
     text-align: center;
-    font-family: 'disto_Regular', sans-serif;
-    padding: 10px 270px;
+    font-weight: 400;
+    /* padding: 10px 270px; */
   }
 
 
@@ -464,7 +489,7 @@ body {
   .topic_3 h1 {
     font-size: 3.5rem;
     line-height: 3.5rem;
-    font-family: 'disto_Bold', sans-serif;
+    font-weight: 700;
     color: #111;
     text-align: left;
   }
@@ -473,7 +498,7 @@ body {
   .topic_3 h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
-    font-family: 'disto_Regular', sans-serif;
+    font-weight: 400;
     color: #333;
     text-align: left;
     padding: 10px 0;
@@ -482,8 +507,8 @@ body {
   .topic_2 p,
   .topic_3 p {
     font-size: 1.5rem;
-    line-height: 1.5rem;
-    font-family: 'disto_Regular', sans-serif;
+    line-height: 120%;
+    font-weight: 400;
     color: #444;
     text-align: left;
   }
@@ -499,27 +524,35 @@ body {
 
 /* FONT FACE */
 @font-face {
-  font-family: 'disto_Light';
+  font-family: 'disto';
   src: url(font/disto_Light.woff) format('woff'),
     url(font/disto_Light.otf) format('opentype');
+ font-weight: 300; 
+ font-style: normal;
 }
 
 @font-face {
-  font-family: 'disto_Regular';
+  font-family: 'disto';
   src: url(font/disto_Regular.otf) format('woff'),
     url(font/disto_Regular.ttf) format('opentype');
+ font-weight: 400; 
+ font-style: normal;
 }
 
 @font-face {
-  font-family: 'disto_Black';
+  font-family: 'disto';
   src: url(font/disto_Black.otf) format('woff'),
     url(font/disto_Black.ttf) format('opentype');
+ font-weight: 900; 
+ font-style: normal;
 }
 
 @font-face {
-  font-family: 'disto_Bold';
+  font-family: 'disto';
   src: url(font/disto_Bold.otf) format('woff'),
     url(font/disto_Bold.ttf) format('opentype');
+ font-weight: 700; 
+ font-style: normal;
 }
 
 
