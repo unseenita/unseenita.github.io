@@ -1,32 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Main Page</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/assets/style/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
+  <div id="page">
 
-    <!-- Navbar Container -->
-    <div id="navbar-container"></div>
+    <div class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo_Unseen.png" alt="logo Unseen" style="height:30px;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="Ansia.html">Ansia sociale</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Fomo.html">FOMO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Hikikomori.html">Hikikomori</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Unseen.html">Unseen</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
 
-    <!-- Main Content -->
-    <div class="page-section" id="home-section1" ></div>
-    <div class="page-section" id="home-section2" ></div>
-    
-    <div id="footer"></div>
+    </div>
 
-    <script src="/scripts/script.js"></script>
-    <script>
-        // Run everything on page load
-        document.addEventListener("DOMContentLoaded", function () {
-        loadSections("home-section");
-        });
-    </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container container-pages">
+      <div class="row g-0">
+        <div class="col-12 mb-4">
+          <div class="topic_1 topic">
+            <div class="top-img_1 top-img">
+              <img src="images/Landing page/eye-lan.png" alt="occhio illustrazione">
+            </div>
+            <div class="pag-text">
+              <h1>Il disagio che isola i giovani.</h1>
+              <h2> Un’analisi che indaga sulla diffusione dell’ ansia sociale in Italia.</h2>
+              <p>Attraverso un’esplorazione in merito alle dimensioni psicologiche e fisiche,
+                viene evidenziato l’impatto dei disturbi e i fenomeni specifici sulla vita
+                quotidiana di un individuo.
+              </p>
+            </div>
+
+            <div class="link-lan_1 link-lan">
+              <a href="https://www.w3schools.com/css/">Leggi di più<img src="images/Sistema icone/freccia_nera.png"
+                  alt="freccia"></a>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="topic_2 topic">
+            <div class="top-img_2 top-img">
+              <img src="images/Landing page/fomo.png" alt="occhio illustrazione">
+            </div>
+            <div class="pag-text">
+              <h1>FOMO: il timore dell’esclusione.</h1>
+              <h2> Quando la paura diventa un’ossessione.</h2>
+              <p>Un fenomeno sempre più diffuso che complica i rapporti sociali
+                e attraverso i social media accentua il confronto con vite apparentemente perfette.
+              </p>
+            </div>
+
+            <div class="link-lan_2 link-lan">
+              <a href="">Leggi di più<img src="images/Sistema icone/freccia_nera.png" alt="freccia"></a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="topic_3 topic">
+            <div class="top-img_3 top-img">
+              <img src="images/Landing page/hikikomori.png" alt="occhio illustrazione">
+            </div>
+            <div class="pag-text">
+              <h1>Hikikomori: <br>soli per scelta.</h1>
+              <h2>Il ritiro sociale <br> nell’era moderna.</h2>
+              <p>Un fenomeno legato ad ansia e pressione sociale che spinge sempre più giovani alla solitudine,
+                evitando contatti sociali per lunghi periodi.
+              </p>
+
+
+
+            </div>
+
+            <div class="link-lan_3 link-lan">
+              <a href="">Leggi di più<img src="images/Sistema icone/freccia_nera.png" alt="freccia"></a>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-12 mb-4">
+          <div class="topic_4 topic">
+            <div class="top-img_4 top-img">
+              <img src="images/Landing page/useen-lan.png" alt="occhio illustrazione">
+            </div>
+            <div class="pag-text">
+              <h1>UNSEEN: Tutti gli occhi su di me.</h1>
+              <h2> I due volti dell’isolamento sociale.</h2>
+              <p>Il progetto che dà forma all'invisibile, esplorando i disturbi delle nuove generazioni, legati
+                all'ansia sociale.</p>
+            </div>
+
+            <div class="link-lan_4 link-lan">
+              <a href="">Leggi di più<img src="images/Sistema icone/freccia_nera.png" alt="freccia"></a>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="footer">
+
+
+
+      <div class="foot">
+
+        <p> <b>Design by </b>P. Francabandiera
+        <p>
+        <p>S. Guizzo - M. Lustrissimi - A. Mihai</p>
+
+      </div>
+
+      <div class="foot">
+
+        <p> <b>ISIA ROMA DESIGN </b></p>
+        <p>A.A. 2024/2025</p>
+
+      </div>
+
+      <div class="foot">
+
+        <p> <b>Informatica Multimediale Avanzata </b></p>
+        <p>Docente: Antonello Lipori</p>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

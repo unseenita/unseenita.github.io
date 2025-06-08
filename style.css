@@ -1,0 +1,545 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+canvas,
+img,
+picture,
+svg,
+video {
+  display: block;
+  width: 100%;
+}
+
+
+
+button,
+input,
+select,
+textarea {
+  font: inherit
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word
+}
+
+*/
+
+
+html {
+  font-size: 16px;
+}
+
+#page {
+  font-size: 1rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'disto_Regular', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* CONTAINER SEMPRE A TUTTA PAGINA */
+.container,
+.container-lg,
+.container-md,
+.container-sm {
+  width: 100% !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* HEADER E NAVBAR */
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  background-color: transparent;
+}
+
+.container-fluid,
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+  
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+  z-index: 10001;
+}
+
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* NAVBAR COLORI E LINK */
+.navbar.bg-dark {
+  background-color: #262626 !important;
+  font-size: 1.3rem;
+}
+
+.navbar .collapse {
+  background-color: #262626 !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+
+}
+
+/* Stile normale per i link del menu */
+
+
+/* MENU MOBILE A TUTTO SCHERMO */
+@media (max-width: 1199px) {
+ 
+    /* Hide navbar collapse by default on mobile */
+  .navbar.bg-dark .navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #262626 !important;
+    z-index: 9999;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    visibility: hidden;
+  }
+
+  /* Show it when Bootstrap adds the 'show' class */
+  .navbar.bg-dark .navbar-collapse.show {
+    transform: translateX(0);
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 60px 0;
+  }
+
+  /* Rest of your existing styles for .show state */
+  .navbar.bg-dark .navbar-collapse.show .nav-link {
+    display: flex;
+    font-size: 2rem;
+    font-family: 'disto_Regular', sans-serif;
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    width: 100vw;
+    justify-content: flex-start;
+    background-color:  #262626;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Your existing hover styles remain the same */
+  .navbar.bg-dark .navbar-collapse.show .nav-link:hover,
+  .navbar.bg-dark .navbar-collapse.show .nav-link:focus,
+  .navbar.bg-dark .navbar-collapse.show .nav-link:active {
+    background-color: #ffffff;
+    color:  #262626;
+  }
+
+  .navbar.bg-dark .navbar-collapse.show .nav-link {
+    -webkit-tap-highlight-color: rgba(30, 58, 95, 0.3);
+  }
+
+
+  .navbar.bg-dark .navbar-toggler {
+    position: unset;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+  }
+}
+
+/* TESTI */
+.container-pages h1 {
+  line-height: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #000;
+  font-family: 'disto_Bold', sans-serif;
+}
+
+.container-pages h2 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: #000;
+  font-family: 'disto_Regular', sans-serif;
+  padding: 10px 0;
+}
+
+.container-pages p {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+  font-family: 'disto_Regular', sans-serif;
+  color: #000;
+  padding: 10px 0;
+  margin: 0;
+}
+
+/* BOX TOPIC E IMMAGINI */
+.container-pages,
+.row,
+.topic {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* ---------------- INIZIO LANDING PAGE MOBILE---------------- */
+
+
+.topic {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top-img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  /* quadrato su mobile */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.top-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* LINK LANDING PAGE */
+
+/* Stile base: link normale su mobile */
+.link-lan {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0 10px 30px;
+  font-family: 'disto_Regular', sans-serif;
+  width: 100%;
+}
+
+.link-lan a,
+.link-lan img {
+  transition: all 0.2s;
+}
+
+.link-lan a {
+  flex-direction: row;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+
+
+}
+
+.link-lan a:hover {
+  text-decoration: underline;
+}
+
+.link-lan img {
+
+  width: 15px;
+  height: 15px;
+  margin-left: 100px;
+
+}
+
+/* TESTO BOX */
+.pag-text {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------- FINE LANDING PAGE MOBILE---------------- */
+
+
+/* FOOTER */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px 10px 10px;
+  font-family: 'disto_Regular', sans-serif;
+  margin: 0;
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.foot {
+  display: flex;
+  padding: 5px 0;
+  flex-direction: column;
+}
+
+.foot p {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+
+  .container-pages a {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: 'disto_Regular', sans-serif;
+
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    height: 15vh;
+  }
+}
+
+
+@media (min-width: 1200px) {
+
+
+  .navbar .nav-link {
+    color: #ffffff !important;
+    display: flex;
+    justify-content: center;
+    font-family: 'disto_Regular', sans-serif;
+  }
+
+
+  /* ---------------- INIZIO LANDING PAGE DESKTOP---------------- */
+
+
+  .link-lan_1,
+  .link-lan_4 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+  }
+
+  .link-lan_2,
+  .link-lan_3 {
+    padding: 0 40px 30px;
+  }
+
+
+  .link-lan_1 a,
+  .link-lan_4 a {
+    background: #ffffff;
+    border-color: #262626;
+    border-style: outset;
+    border-radius: 0;
+    padding: 20px 30px;
+    font-family: 'disto_Regular', sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    width: 30%;
+
+  }
+
+  .link-lan_1 a:hover,
+  .link-lan_4 a:hover {
+    background: #262626;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  /* Cambia l'immagine all' hover */
+  .link-lan_1 a:hover img,
+  .link-lan_4 a:hover img {
+    content: url("images/Sistema icone/freccia_bianca.png");
+    /* Percorso nuova immagine */
+  }
+
+
+  .link-lan_1 img,
+  .link-lan_4 img {
+    width: 20px;
+    height: 20px;
+
+  }
+
+  /* rettangolare su desktop */
+  .top-img_1,
+  .top-img_4 {
+    aspect-ratio: 16/9;
+  }
+
+  .top-img_2,
+  .top-img_3 {
+    height: 90vh;
+    object-fit: contain;
+  }
+
+
+  /* Topic 1 e 4 */
+
+  .topic_1 h1,
+  .topic_4 h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    text-align: center;
+    font-family: 'disto_Bold', sans-serif;
+    color: #000;
+  }
+
+  .topic_1 h2,
+  .topic_4 h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    font-family: 'disto_Regular', sans-serif;
+    color: #000;
+    padding: 10px 280px;
+  }
+
+  .topic_1 p,
+  .topic_4 p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-family: 'disto_Regular', sans-serif;
+    padding: 10px 270px;
+  }
+
+
+  /* Topic 2 e 3 */
+  .topic_2 h1,
+  .topic_3 h1 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    font-family: 'disto_Bold', sans-serif;
+    color: #111;
+    text-align: left;
+  }
+
+  .topic_2 h2,
+  .topic_3 h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-family: 'disto_Regular', sans-serif;
+    color: #333;
+    text-align: left;
+    padding: 10px 0;
+  }
+
+  .topic_2 p,
+  .topic_3 p {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: 'disto_Regular', sans-serif;
+    color: #444;
+    text-align: left;
+  }
+
+  .pag-text {
+    padding: 40px;
+  }
+
+  /* ---------------- FINE LANDING PAGE ---------------- */
+
+}
+
+
+/* FONT FACE */
+@font-face {
+  font-family: 'disto_Light';
+  src: url(font/disto_Light.woff) format('woff'),
+    url(font/disto_Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'disto_Regular';
+  src: url(font/disto_Regular.otf) format('woff'),
+    url(font/disto_Regular.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'disto_Black';
+  src: url(font/disto_Black.otf) format('woff'),
+    url(font/disto_Black.ttf) format('opentype');
+}
+
+@font-face {
+  font-family: 'disto_Bold';
+  src: url(font/disto_Bold.otf) format('woff'),
+    url(font/disto_Bold.ttf) format('opentype');
+}
+
+
+
+
+
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+/* Navbar mobile: sfondo scuro solo quando il menu è aperto */
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
