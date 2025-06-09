@@ -433,6 +433,7 @@ body {
   .link-lan_4 img {
     width: 20px;
     height: 20px;
+    align-items: stretch;
 
   }
 
