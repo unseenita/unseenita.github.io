@@ -135,12 +135,11 @@ body {
 
 /* MENU MOBILE A TUTTO SCHERMO */
 @media (max-width: 1199px) {
-   hr{
-    display: flex;
-  transform: rotate(90deg);
-
-    
-   }
+   
+  .vr{
+    margin: 0 auto;
+  width: 50%;
+  }
 
     /* Hide navbar collapse by default on mobile */
   .navbar.bg-dark .navbar-collapse {
