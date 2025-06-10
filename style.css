@@ -240,7 +240,7 @@ body {
 .topic {
   display: flex;
   flex-direction: column;
-  height: 100%;
+
 }
 
 .top-img {
@@ -252,6 +252,7 @@ body {
   align-items: center;
   justify-content: center;
   background: #fff;
+  padding:0;
 }
 
 .top-img img {
@@ -385,7 +386,7 @@ body {
 }
 
 .graph img{
-  width: 90%;
+  width: 95%;
   padding: 30px 10px;
 }
 
@@ -402,25 +403,76 @@ align-items: center;
   height: 12px; /* Dimensione del quadrato */
   margin-right: 5px; /* Spazio tra il quadrato e il testo */
   vertical-align: middle; /* Allinea verticalmente al testo */
-  color: #fff;
+  border-radius: 0; /* Rende il quadrato leggermente arrotondato */
 }
 
+/* lista leggenda */
+
+ .list-unstyled li {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin: 0 10px;
+}
+
+
 .color-1 {
-  background-color: #D3473C !important; /* Colore per "Giovani tra i 18 e i 25 anni" */
+color: #D3473C !important; /* Colore per "Giovani tra i 18 e i 25 anni" */
+margin: 10px;
 }
 
 .color-2 {
-  background-color: #FFFFFF !important; /* Colore per "Giovani tra i 15 e i 19 anni" */
-  
+ color: #FFFFFF !important; /* Colore per "Giovani tra i 15 e i 19 anni" */
+ margin: 10px;
+}
+
+/* fine lista leggenda */
+
+
+/* ---------------- FINE ANSIA SOCIALE MOBILE---------------- */
+
+
+
+
+
+
+
+/* ---------------- INIZIO PAG PROJECT MOBILE---------------- */
+
+
+#topic-unseen1,#topic-unseen2, #topic-unseen3, #topic-unseen4, #topic-unseen5{
+  background-color: #262626;
+}
+
+#topic-unseen1 h1,
+#topic-unseen1 h2,
+#topic-unseen1 p,
+#topic-unseen1 a,
+#topic-unseen2 h1,
+#topic-unseen2 h2,
+#topic-unseen2 p,
+#topic-unseen2 a,
+#topic-unseen3 h1,
+#topic-unseen3 h2,
+#topic-unseen3 p,
+#topic-unseen3 a,
+#topic-unseen4 h1,
+#topic-unseen4 h2,
+#topic-unseen4 p,
+#topic-unseen4 a,
+#topic-unseen5 h1,
+#topic-unseen5 h2,
+#topic-unseen5 p,
+#topic-unseen5 a
+{
+  color: #ffffff !important;
+
 }
 
 
 
 
-
-
-
-/* ---------------- FINE ANSIA SOCIALE MOBILE---------------- */
+/* ---------------- FINE PAG PROJECT MOBILE---------------- */
 
 
 
@@ -632,7 +684,93 @@ align-items: center;
     padding: 40px;
   }
 
-  /* ---------------- FINE LANDING PAGE ---------------- */
+  /* ---------------- FINE LANDING PAGE  DESKTOP ---------------- */
+
+
+
+/* ---------------- INIZIO ANSIA SOCIALE DESKTOP ---------------- */
+
+
+@media (min-width: 1200px) {
+
+
+  #link-ansia3,  #link-ansia5,  #link-ansia6 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+  }
+  
+   
+ 
+   #link-ansia3 a,  #link-ansia5 a,  #link-ansia6 a {
+    background: #262626;
+    border-color: #ffffff;
+    border-style: solid;
+    border-radius: 0;
+    padding: 20px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    width: 100%;
+    max-width: 30rem;
+
+  }
+
+  #link-ansia3 a:hover,
+ #link-ansia5 a:hover,
+ #link-ansia6 a:hover
+   {
+    background: #ffffff;
+    color:#000000;
+    text-decoration: none;
+  }
+
+  /* Cambia l'immagine all' hover */
+
+  #link-ansia3 a:hover img,
+ #link-ansia5 a:hover img ,
+ #link-ansia6 a:hover img{
+    content: url("images/Sistema icone/freccia_nera.png");
+    /* Percorso nuova immagine */
+  }
+
+}
+
+
+/* ---------------- FINE ANSIA SOCIALE DESKTOP ---------------- */
+
+
+
+
+
+/* ---------------- INIZIO FOMO DESKTOP ---------------- */
+
+
+
+/* ---------------- FINE FOMO DESKTOP ---------------- */
+
+
+
+
+
+/* ---------------- INIZIO HIKIKO DESKTOP ---------------- */
+
+
+
+/* ---------------- FINE HIKIKO DESKTOP ---------------- */
+
+
+
+
+/* ---------------- INIZIO PROJECT DESKTOP ---------------- */
+
+
+
+/* ---------------- FINE PROJECT DESKTOP ---------------- */
 
 }
 
