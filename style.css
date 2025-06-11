@@ -202,6 +202,14 @@ body {
 
 
 /* TESTI */
+
+.container-pages h3 {
+  line-height: 4.5rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
 .container-pages h1 {
   line-height: 2.5rem;
   font-size: 2.5rem;
@@ -479,6 +487,124 @@ margin: 10px;
 
 
 
+/* ---------------- INIZIO FOMO MOBILE---------------- */
+
+
+#topic-fomo1, #topic-fomo5, #topic-fomo7, #topic-fomo12, #topic-fomo13 {
+  background-color: #262626;
+}
+#topic-fomo11, #img-fomo12{
+ background-color: #262626;
+padding: 40px 30px;
+}
+
+#topic-fomo1 h1,
+#topic-fomo1 h2,
+#topic-fomo1 p,
+#topic-fomo5 h1,
+#topic-fomo5 p,
+#topic-fomo5 a,
+#topic-fomo7 h1,
+#topic-fomo7 h2,
+#topic-fomo7 p,
+#topic-fomo12 h1,
+#topic-fomo12 h2,
+#topic-fomo12 p,
+#topic-fomo12 a,
+#topic-fomo13 h1,
+#topic-fomo13 h2,
+#topic-fomo13 p
+{
+color: #ffffff;
+}
+
+
+
+#fomo-end{
+  background-color: #D3473C;
+}
+
+#fomo-end h1,
+#fomo-end h2,
+#fomo-end p
+{
+color: #ffffff;
+}
+
+#topic-fomo6 h3,
+#topic-fomo6 h1{
+color: #D3473C;
+}
+
+#list-fomo {
+  list-style: none; /* Rimuove i punti elenco predefiniti */
+  padding: 0; /* Rimuove il padding predefinito */
+}
+
+#list-fomo li {
+  margin-bottom: 5px; /* Aggiunge un po' di spazio tra gli elementi della lista */
+  color: #000;
+}
+
+
+#list-fomo i.fas.fa-square {
+  display: inline-block;
+  width: 12px; /* Dimensione del quadrato */
+  height: 12px; /* Dimensione del quadrato */
+  margin-right: 5px; /* Spazio tra il quadrato e il testo */
+  vertical-align: middle; /* Allinea verticalmente al testo */
+  border-radius: 0; /* Rende il quadrato leggermente arrotondato */
+}
+
+/* leggenda colori dati fomo ore*/
+#fomo-leg1 {
+color: #D3473C !important; 
+margin: 10px;
+}
+
+#fomo-leg1 {
+color: #8A3933 !important; 
+margin: 10px;
+}
+
+#fomo-leg1 {
+color: #262626 !important; 
+margin: 10px;
+}
+
+#fomo-leg1 {
+color: #000000 !important; 
+margin: 10px;
+}
+
+#fomo-leg1 {
+color: #ffffff !important; 
+border: #000;
+margin: 10px;
+}
+
+.text-icon h2{
+  color: #000;
+}
+
+/* ---------------- FINE FOMO MOBILE---------------- */
+
+
+
+
+
+
+/* ---------------- INIZIO HIKI MOBILE---------------- */
+
+
+/* ---------------- FINE HIKI MOBILE---------------- */
+
+
+
+
+
+
+
 /* FOOTER */
 .footer {
   display: flex;
@@ -534,6 +660,15 @@ margin: 10px;
 
 
 @media (min-width: 1200px) {
+
+  
+
+  .container-pages h3 {
+  line-height: 5.5rem;
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #000;
+}
 
   .container-pages a {
     font-size: 1.5rem;
