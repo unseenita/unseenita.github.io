@@ -364,6 +364,14 @@ body {
 }
 
 
+
+.text-icon  h1,
+.text-icon h2,
+.pag-text.icons  p{
+  color: #fff;
+}
+
+
 .icone-anx {
   display: flex;
   flex-direction: column;
@@ -371,6 +379,19 @@ body {
   justify-content: center;
   padding: 20px;
 }
+
+.icone-anx h1,
+.icone-anx h2,
+.icone-anx p{
+  color: #fff;
+}
+
+
+.text-icon h2,
+.text-icon p{
+  color: #fff;
+}
+
 
 .icon-ansia {
   display: flex;
@@ -381,7 +402,7 @@ body {
  
 }
 
-.icon-ansia h2 {
+.icon-ansia {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
