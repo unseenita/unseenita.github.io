@@ -88,7 +88,6 @@ body {
   background-color: transparent;
 }
 
-.container-fluid,
 .navbar {
   display: flex;
   justify-content: center;
@@ -134,12 +133,9 @@ body {
 
 
 /* MENU MOBILE A TUTTO SCHERMO */
-@media (max-width: 1199px) {
+@media (max-width: 992px) {
    
-  .vr{
-    margin: 0 auto;
-  width: 50%;
-  }
+
 
     /* Hide navbar collapse by default on mobile */
   .navbar.bg-dark .navbar-collapse {
@@ -198,6 +194,11 @@ body {
     right: 20px;
     z-index: 10000;
   }
+
+
+  .link-lan {
+    padding-inline: 15px;
+  }
 }
 
 
@@ -225,6 +226,14 @@ body {
   padding: 10px 0;
 }
 
+.container-pages h3 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 400;
+  color: #000;
+  padding: 10px 0;
+}
+
 .container-pages p {
   font-size: 1rem;
   line-height: 120%;
@@ -236,19 +245,22 @@ body {
 
 /* BOX TOPIC E IMMAGINI */
 .container-pages,
-.row,
-.topic {
+.row {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+
+.topic {
+  padding-block-end: 40px;
 }
 
 /* ---------------- INIZIO LANDING PAGE MOBILE---------------- */
 
 
 .topic {
-  display: flex;
-  flex-direction: column;
-
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .top-img {
@@ -279,7 +291,7 @@ body {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding: 0 15px 30px;
+  /* padding: 0 15px 30px; */
   font-weight: 400;
   width: 100%;
 }
@@ -316,10 +328,12 @@ body {
 
 /* TESTO BOX */
 .pag-text {
-  padding: 15px;
+  width: 100%;
   display: flex;
+  padding: 15px;
   flex-direction: column;
 }
+
 
 /* ---------------- FINE LANDING PAGE MOBILE---------------- */
 
@@ -330,35 +344,45 @@ body {
 /* ---------------- INIZIO ANSIA SOCIALE MOBILE---------------- */
 
 
-#topic-ansia1,#topic-ansia3, #topic-ansia4, #topic-ansia5, #topic-ansia6{
+.topic-wrapper{
   background-color: #262626;
 }
 
-#topic-ansia1 h1,
-#topic-ansia1 h2,
-#topic-ansia1 p,
-#topic-ansia1 a {
-  color: #ffffff !important;
+.topic-wrapper.topic-light{
+  background-color: #fff;
 }
 
 
-#topic-ansia3 p,
-#topic-ansia3 a,
-#topic-ansia4 h2,
-#topic-ansia4 a,
-#topic-ansia5 h1,
-#topic-ansia5 h2,
-#topic-ansia5 a,
-#topic-ansia5 p,
-#topic-ansia6 h2,
-#topic-ansia6 a,
-#topic-ansia6 p {
-  color: #ffffff !important;
+.topic{
+  background-color: #262626;
+}
+.topic.topic-light{
+  background-color: #fff;
 }
 
-.ansia-hr hr{
+.topic h1,
+.topic h2,
+.topic h3,
+.topic p,
+.topic a {
+  color: #ffffff ;
+}
+
+
+.topic.topic-light h1,
+.topic.topic-light h2,
+.topic.topic-light h3,
+.topic.topic-light p,
+.topic.topic-light a {
+  color: #262626;
+}
+
+
+
+
+.ansia-hr {
   color: #ffffff solid;
-  height: 1px;
+  height: 2px;
 
   
 }
@@ -367,6 +391,7 @@ body {
 
 .text-icon  h1,
 .text-icon h2,
+.text-icon h3,
 .pag-text.icons  p{
   color: #fff;
 }
@@ -382,11 +407,13 @@ body {
 
 .icone-anx h1,
 .icone-anx h2,
+.icone-anx h3,
 .icone-anx p{
   color: #fff;
 }
 
 
+.text-icon h3,
 .text-icon h2,
 .text-icon p{
   color: #fff;
@@ -441,7 +468,7 @@ align-items: center;
   display: flex;
   align-items: center;
   color: #ffffff;
-  margin: 0 10px;
+
 }
 
 
@@ -510,6 +537,16 @@ margin: 10px;
 
 /* ---------------- INIZIO FOMO MOBILE---------------- */
 
+
+
+.legenda {
+  width: 1rem; aspect-ratio: 1/1; background-color: red; display: inline-block; vertical-align: baseline; border-radius: 2px; margin-right: 5px;
+}
+
+.legenda.legenda-bianco {
+  background-color: white;
+  border: 1px #000 solid;
+}
 
 #topic-fomo1, #topic-fomo5, #topic-fomo7, #topic-fomo12, #topic-fomo13 {
   background-color: #262626;
@@ -604,8 +641,9 @@ border: #000;
 margin: 10px;
 }
 
-.text-icon h2{
-  color: #000;
+.text-icon h2, 
+.text-icon h3{
+  color: #fff;
 }
 
 /* ---------------- FINE FOMO MOBILE---------------- */
@@ -680,7 +718,11 @@ margin: 10px;
 }
 
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
+
+  .index-col-fomo {
+    border-inline-end: 2px #000 solid;
+  }
 
   
 
@@ -688,7 +730,6 @@ margin: 10px;
   line-height: 5.5rem;
   font-size: 5.5rem;
   font-weight: 700;
-  color: #000;
 }
 
   .container-pages a {
@@ -712,21 +753,21 @@ margin: 10px;
   .link-lan_1,
   .link-lan_4 {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     gap: 10px;
 
   }
 
   .link-lan_2,
   .link-lan_3 {
-    padding: 0 40px;
+    /* padding: 40px; */
   }
 
 
   .link-lan_1 a,
   .link-lan_4 a {
-    background: #ffffff;
-    border-color: #262626;
+    background: #262626;
+    border-color: #fff;
     border-style: solid;
     border-radius: 0;
     padding: 20px 30px;
@@ -738,13 +779,12 @@ margin: 10px;
     transition: background 0.2s, color 0.2s;
     width: 100%;
     max-width: 30rem;
-
   }
 
   .link-lan_1 a:hover,
   .link-lan_4 a:hover {
-    background: #262626;
-    color: #ffffff;
+    background: #ffffff;
+    color: #262626;
     text-decoration: none;
   }
 
@@ -752,7 +792,19 @@ margin: 10px;
   .link-lan_1 a:hover img,
   .link-lan_4 a:hover img {
     content: url("images/Sistema icone/freccia_bianca.png");
+    mix-blend-mode: difference;
     /* Percorso nuova immagine */
+  }
+
+  .topic-light .link-lan_1 a, .topic-light .link-lan_4 a {
+    color: #262626;
+    background: #fff;
+    border-color: #262626;
+  }
+  .topic-light .link-lan_1 a:hover, .topic-light .link-lan_4 a:hover {
+    color: #fff;
+    background: #262626;
+    border-color: #262626;
   }
 
 
@@ -782,8 +834,8 @@ margin: 10px;
 
   /* Topic 1 e 4 */
 
-  .topic_1 h1,
-  .topic_4 h1 {
+  .topic_center h1,
+  .topic_center h1 {
     font-size: 3.5rem;
     line-height: 3.5rem;
     text-align: center;
@@ -791,8 +843,8 @@ margin: 10px;
 
   }
 
-  .topic_1 h2,
-  .topic_4 h2 {
+  .topic_center h2,
+  .topic_center h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
     text-align: center;
@@ -800,8 +852,17 @@ margin: 10px;
     /* padding: 10px 280px; */
   }
 
-  .topic_1 p,
-  .topic_4 p {
+  .topic_center h3,
+  .topic_center h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    font-weight: 400;
+    /* padding: 10px 280px; */
+  }
+
+  .topic_center p,
+  .topic_center p {
     font-size: 1.5rem;
     line-height: 120%;
     text-align: center;
@@ -811,25 +872,33 @@ margin: 10px;
 
 
   /* Topic 2 e 3 */
-  .topic_2 h1,
-  .topic_3 h1 {
+  .topic_left h1,
+  .topic_left h1 {
     font-size: 3.5rem;
     line-height: 3.5rem;
     font-weight: 700;
     text-align: left;
   }
 
-  .topic_2 h2,
-  .topic_3 h2 {
+  .topic_left h2,
+  .topic_left h2 {
     font-size: 2.5rem;
     line-height: 2.5rem;
     font-weight: 400;
     text-align: left;
     padding: 10px 0;
   }
+  .topic_left h3,
+  .topic_left h3 {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px 0;
+  }
 
-  .topic_2 p,
-  .topic_3 p {
+  .topic_left p,
+  .topic_left p {
     font-size: 1.5rem;
     line-height: 120%;
     font-weight: 400;
@@ -847,54 +916,14 @@ margin: 10px;
 /* ---------------- INIZIO ANSIA SOCIALE DESKTOP ---------------- */
 
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
+  .icone-anx {
 
-
-  #link-ansia3,  #link-ansia5,  #link-ansia6 {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+    flex-direction: row;
 
   }
-  
-   
- 
-   #link-ansia3 a,  #link-ansia5 a,  #link-ansia6 a {
-    background: #262626;
-    border-color: #ffffff;
-    border-style: solid;
-    border-radius: 0;
-    padding: 20px 30px;
-    font-weight: 400;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    cursor: pointer;
-    transition: background 0.2s, color 0.2s;
-    width: 100%;
-    max-width: 30rem;
-
-  }
-
-  #link-ansia3 a:hover,
- #link-ansia5 a:hover,
- #link-ansia6 a:hover
-   {
-    background: #ffffff;
-    color:#000000;
-    text-decoration: none;
-  }
-
-  /* Cambia l'immagine all' hover */
-
-  #link-ansia3 a:hover img,
- #link-ansia5 a:hover img ,
- #link-ansia6 a:hover img{
-    content: url("images/Sistema icone/freccia_nera.png");
-    /* Percorso nuova immagine */
-  }
-
 }
+
 
 
 /* ---------------- FINE ANSIA SOCIALE DESKTOP ---------------- */
