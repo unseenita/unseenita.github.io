@@ -204,7 +204,7 @@ body {
 
 /* TESTI */
 
-.container-pages h3 {
+.container-pages h4 {
   line-height: 4.5rem;
   font-size: 4.5rem;
   font-weight: 700;
@@ -227,8 +227,8 @@ body {
 }
 
 .container-pages h3 {
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
   font-weight: 400;
   color: #000;
   padding: 10px 0;
@@ -252,37 +252,42 @@ body {
 
 
 .topic {
-  padding-block-end: 40px;
+  /* padding-block-end: 40px; */
+  height: 100%;
 }
 
 /* ---------------- INIZIO LANDING PAGE MOBILE---------------- */
 
-
+/*
 .topic {
   /* display: flex;
-  flex-direction: column; */
-}
+  flex-direction: column;
+  } */
 
-.top-img {
+.top-img
+ {
   width: 100%;
-  aspect-ratio: 1/1;
+  /*aspect-ratio: 1/1; */
   /* quadrato su mobile */
   /* overflow: hidden; */
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  /* background: #fff; */
   padding:0;
 }
 
 .top-img img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
+  
 }
 
+.top-img2 {
+  height: 100%;
+}
 /* LINK LANDING PAGE */
 
 /* Stile base: link normale su mobile */
@@ -291,7 +296,7 @@ body {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  /* padding: 0 15px 30px; */
+  padding: 20px; 
   font-weight: 400;
   width: 100%;
 }
@@ -343,7 +348,7 @@ body {
 
 /* ---------------- INIZIO ANSIA SOCIALE MOBILE---------------- */
 
-
+/*  parte che gestisce background b/n */
 .topic-wrapper{
   background-color: #262626;
 }
@@ -377,7 +382,7 @@ body {
   color: #262626;
 }
 
-
+/* fine backgr b/n*/
 
 
 .ansia-hr {
@@ -442,8 +447,10 @@ body {
 }
 
 .graph img{
-  width: 95%;
-  padding: 30px 10px;
+  width: 100%;
+  padding:  40px 15px;
+  margin:0;
+  height: 100%;
 }
 
 .graph{
@@ -540,40 +547,29 @@ margin: 10px;
 
 
 .legenda {
-  width: 1rem; aspect-ratio: 1/1; background-color: red; display: inline-block; vertical-align: baseline; border-radius: 2px; margin-right: 5px;
+  width: 1rem; 
+  aspect-ratio: 1/1; 
+  background-color:#ac5858 ;
+  display: inline-block; 
+  vertical-align: baseline; 
+  border-radius: 2px; 
+  margin-right: 5px;
 }
 
 .legenda.legenda-bianco {
-  background-color: white;
+  background-color:#ffffff;
   border: 1px #000 solid;
 }
 
-#topic-fomo1, #topic-fomo5, #topic-fomo7, #topic-fomo12, #topic-fomo13 {
-  background-color: #262626;
-}
-#topic-fomo11, #img-fomo12{
- background-color: #262626;
-padding: 40px 30px;
+.topic-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-#topic-fomo1 h1,
-#topic-fomo1 h2,
-#topic-fomo1 p,
-#topic-fomo5 h1,
-#topic-fomo5 p,
-#topic-fomo5 a,
-#topic-fomo7 h1,
-#topic-fomo7 h2,
-#topic-fomo7 p,
-#topic-fomo12 h1,
-#topic-fomo12 h2,
-#topic-fomo12 p,
-#topic-fomo12 a,
-#topic-fomo13 h1,
-#topic-fomo13 h2,
-#topic-fomo13 p
-{
-color: #ffffff;
+.topic-fomo{
+  height: 100%;
 }
 
 
@@ -589,14 +585,14 @@ color: #ffffff;
 color: #ffffff;
 }
 
-#topic-fomo6 h3,
+#topic-fomo6 h4,
 #topic-fomo6 h1{
 color: #D3473C;
 }
 
 #list-fomo {
   list-style: none; /* Rimuove i punti elenco predefiniti */
-  padding: 0; /* Rimuove il padding predefinito */
+   /* Rimuove il padding predefinito */
 }
 
 #list-fomo li {
@@ -606,45 +602,38 @@ color: #D3473C;
 
 
 #list-fomo i.fas.fa-square {
-  display: inline-block;
-  width: 12px; /* Dimensione del quadrato */
-  height: 12px; /* Dimensione del quadrato */
-  margin-right: 5px; /* Spazio tra il quadrato e il testo */
-  vertical-align: middle; /* Allinea verticalmente al testo */
-  border-radius: 0; /* Rende il quadrato leggermente arrotondato */
+  display: inline-block; 
+  vertical-align: baseline; 
+  border-radius: 2px; 
+  margin-right: 5px;
 }
 
-/* leggenda colori dati fomo ore*/
-#fomo-leg1 {
-color: #D3473C !important; 
-margin: 10px;
+.legenda.legenda-bordeaux {
+  background-color:#8A3933;
+ 
+}
+.legenda.legenda-red {
+  background-color:#D3473C;
+
+}
+.legenda.legenda-black {
+  background-color:#000000;
+}
+.legenda.legenda-gray {
+  background-color:#262626;
 }
 
-#fomo-leg1 {
-color: #8A3933 !important; 
-margin: 10px;
-}
 
-#fomo-leg1 {
-color: #262626 !important; 
-margin: 10px;
-}
-
-#fomo-leg1 {
-color: #000000 !important; 
-margin: 10px;
-}
-
-#fomo-leg1 {
-color: #ffffff !important; 
-border: #000;
-margin: 10px;
+.legenda.legenda-white {
+  background-color:#ffffff;
+  border: 1px #000 solid;
 }
 
 .text-icon h2, 
 .text-icon h3{
   color: #fff;
 }
+
 
 /* ---------------- FINE FOMO MOBILE---------------- */
 
@@ -657,6 +646,7 @@ margin: 10px;
 
 
 /* ---------------- FINE HIKI MOBILE---------------- */
+
 
 
 
@@ -719,6 +709,16 @@ margin: 10px;
 
 
 @media (min-width: 992px) {
+/*
+.topic {
+  /* padding-block-end: 40px;
+  height: 100%;
+}
+*/
+
+
+  .top-img {
+height: auto;  }
 
   .index-col-fomo {
     border-inline-end: 2px #000 solid;
@@ -726,11 +726,13 @@ margin: 10px;
 
   
 
-  .container-pages h3 {
+  .container-pages h4 {
   line-height: 5.5rem;
   font-size: 5.5rem;
   font-weight: 700;
 }
+
+
 
   .container-pages a {
     font-size: 1.5rem;
@@ -760,7 +762,7 @@ margin: 10px;
 
   .link-lan_2,
   .link-lan_3 {
-    /* padding: 40px; */
+     padding: 40px;
   }
 
 
@@ -819,9 +821,9 @@ margin: 10px;
 
   .top-img_2,
   .top-img_3 {
-    /* height: 90vh; */
+
     height: 50svh;
-    /* object-fit: contain; */
+    object-fit: contain; 
   }
 
   /* rettangolare su desktop */
@@ -840,6 +842,7 @@ margin: 10px;
     line-height: 3.5rem;
     text-align: center;
     font-weight: 700;
+    margin-bottom: 20px;
 
   }
 
@@ -872,6 +875,10 @@ margin: 10px;
 
 
   /* Topic 2 e 3 */
+   .topic_left {
+    height: 100%;
+  }
+
   .topic_left h1,
   .topic_left h1 {
     font-size: 3.5rem;
@@ -909,6 +916,8 @@ margin: 10px;
     padding: 40px;
   }
 
+ 
+
   /* ---------------- FINE LANDING PAGE  DESKTOP ---------------- */
 
 
@@ -916,13 +925,26 @@ margin: 10px;
 /* ---------------- INIZIO ANSIA SOCIALE DESKTOP ---------------- */
 
 
-@media (min-width: 992px) {
-  .icone-anx {
 
-    flex-direction: row;
 
-  }
+
+  
+.graph img{
+  max-width: 90%;
+  object-fit: contain;
+
+
 }
+
+.graph{
+display: flex;
+justify-content: center;
+align-items: center; 
+
+
+}
+
+
 
 
 
@@ -934,7 +956,30 @@ margin: 10px;
 
 /* ---------------- INIZIO FOMO DESKTOP ---------------- */
 
+.text-row1 {
+display: flex;
+flex-direction: row;
+align-items: baseline;
+justify-self: center;
+}
 
+.text-part1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 40%;
+  padding: 20px 0 ;
+}
+
+
+.text-part2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+   padding:20px 40px;
+}
 
 /* ---------------- FINE FOMO DESKTOP ---------------- */
 
