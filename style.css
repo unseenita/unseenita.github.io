@@ -49,7 +49,13 @@ html {
 }
 
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   text-wrap: balance;
 }
 
@@ -93,7 +99,7 @@ body {
   justify-content: center;
   width: 100%;
   background-color: transparent;
-  
+
 }
 
 .navbar-brand {
@@ -134,10 +140,10 @@ body {
 
 /* MENU MOBILE A TUTTO SCHERMO */
 @media (max-width: 992px) {
-   
 
 
-    /* Hide navbar collapse by default on mobile */
+
+  /* Hide navbar collapse by default on mobile */
   .navbar.bg-dark .navbar-collapse {
     position: fixed;
     top: 0;
@@ -170,17 +176,17 @@ body {
     text-align: center;
     width: 100vw;
     justify-content: flex-start;
-    background-color:  #262626;
+    background-color: #262626;
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  
+
   /* Your existing hover styles remain the same */
   .navbar.bg-dark .navbar-collapse.show .nav-link:hover,
   .navbar.bg-dark .navbar-collapse.show .nav-link:focus,
   .navbar.bg-dark .navbar-collapse.show .nav-link:active {
     background-color: #ffffff;
-    color:  #262626;
+    color: #262626;
   }
 
   .navbar.bg-dark .navbar-collapse.show .nav-link {
@@ -252,7 +258,7 @@ body {
 
 
 .topic {
-  padding-block-end: 40px; 
+  padding-block-end: 40px;
   height: 100%;
 }
 
@@ -264,8 +270,7 @@ body {
   flex-direction: column;
   } */
 
-.top-img
- {
+.top-img {
   width: 100%;
   aspect-ratio: 1/1;
   /* quadrato su mobile */
@@ -274,7 +279,7 @@ body {
   align-items: center;
   justify-content: center;
   /* background: #fff; */
-  padding:0;
+  padding: 0;
 }
 
 .top-img img {
@@ -283,7 +288,7 @@ body {
   object-fit: cover;
   object-position: center;
   display: block;
-  
+
 }
 
 /*
@@ -299,9 +304,9 @@ body {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  padding: 0;
   font-weight: 400;
   width: 100%;
+  padding: 15px;
 }
 
 .link-lan a,
@@ -320,6 +325,7 @@ body {
 
 
 
+
 }
 
 .link-lan a:hover {
@@ -330,7 +336,7 @@ body {
 
   width: 15px;
   height: 15px;
- 
+
 
 }
 
@@ -352,19 +358,20 @@ body {
 /* ---------------- INIZIO ANSIA SOCIALE MOBILE---------------- */
 
 /*  parte che gestisce background b/n */
-.topic-wrapper{
+.topic-wrapper {
   background-color: #262626;
 }
 
-.topic-wrapper.topic-light{
+.topic-wrapper.topic-light {
   background-color: #fff;
 }
 
 
-.topic{
+.topic {
   background-color: #262626;
 }
-.topic.topic-light{
+
+.topic.topic-light {
   background-color: #fff;
 }
 
@@ -373,7 +380,7 @@ body {
 .topic h3,
 .topic p,
 .topic a {
-  color: #ffffff ;
+  color: #ffffff;
 }
 
 
@@ -392,15 +399,15 @@ body {
   color: #ffffff solid;
   height: 2px;
 
-  
+
 }
 
 
 
-.text-icon  h1,
+.text-icon h1,
 .text-icon h2,
 .text-icon h3,
-.pag-text.icons  p{
+.pag-text.icons p {
   color: #fff;
 }
 
@@ -416,14 +423,14 @@ body {
 .icone-anx h1,
 .icone-anx h2,
 .icone-anx h3,
-.icone-anx p{
+.icone-anx p {
   color: #fff;
 }
 
 
 .text-icon h3,
 .text-icon h2,
-.text-icon p{
+.text-icon p {
   color: #fff;
 }
 
@@ -434,7 +441,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 20px;
- 
+
 }
 
 .icon-ansia {
@@ -443,38 +450,43 @@ body {
   text-align: center;
 }
 
-.icon-ansia img{
+.icon-ansia img {
 
   width: 200px;
   height: 200px;
 }
 
-.graph img{
+.graph img {
   width: 100%;
-  padding:  40px 15px;
-  margin:0;
+  padding: 40px 15px;
+  margin: 0;
   height: 100%;
 }
 
-.graph{
-display: flex;
-justify-content: center;
-align-items: center; 
+.graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .fa-square {
   display: inline-block;
-  width: 12px; /* Dimensione del quadrato */
-  height: 12px; /* Dimensione del quadrato */
-  margin-right: 5px; /* Spazio tra il quadrato e il testo */
-  vertical-align: middle; /* Allinea verticalmente al testo */
-  border-radius: 0; /* Rende il quadrato leggermente arrotondato */
+  width: 12px;
+  /* Dimensione del quadrato */
+  height: 12px;
+  /* Dimensione del quadrato */
+  margin-right: 5px;
+  /* Spazio tra il quadrato e il testo */
+  vertical-align: middle;
+  /* Allinea verticalmente al testo */
+  border-radius: 0;
+  /* Rende il quadrato leggermente arrotondato */
 }
 
 /* lista leggenda */
 
- .list-unstyled li {
+.list-unstyled li {
   display: flex;
   align-items: center;
   color: #ffffff;
@@ -483,13 +495,15 @@ align-items: center;
 
 
 .color-1 {
-color: #D3473C !important; /* Colore per "Giovani tra i 18 e i 25 anni" */
-margin: 10px;
+  color: #D3473C !important;
+  /* Colore per "Giovani tra i 18 e i 25 anni" */
+  margin: 10px;
 }
 
 .color-2 {
- color: #FFFFFF !important; /* Colore per "Giovani tra i 15 e i 19 anni" */
- margin: 10px;
+  color: #FFFFFF !important;
+  /* Colore per "Giovani tra i 15 e i 19 anni" */
+  margin: 10px;
 }
 
 /* fine lista leggenda */
@@ -506,7 +520,11 @@ margin: 10px;
 /* ---------------- INIZIO PAG PROJECT MOBILE---------------- */
 
 
-#topic-unseen1,#topic-unseen2, #topic-unseen3, #topic-unseen4, #topic-unseen5{
+#topic-unseen1,
+#topic-unseen2,
+#topic-unseen3,
+#topic-unseen4,
+#topic-unseen5 {
   background-color: #262626;
 }
 
@@ -529,8 +547,7 @@ margin: 10px;
 #topic-unseen5 h1,
 #topic-unseen5 h2,
 #topic-unseen5 p,
-#topic-unseen5 a
-{
+#topic-unseen5 a {
   color: #ffffff !important;
 
 }
@@ -550,90 +567,96 @@ margin: 10px;
 
 
 .legenda {
-  width: 1rem; 
-  aspect-ratio: 1/1; 
-  background-color:#ac5858 ;
-  display: inline-block; 
-  vertical-align: baseline; 
-  border-radius: 2px; 
+  width: 1rem;
+  aspect-ratio: 1/1;
+  background-color: #ac5858;
+  display: inline-block;
+  vertical-align: baseline;
+  border-radius: 2px;
   margin-right: 5px;
 }
 
 .legenda.legenda-bianco {
-  background-color:#ffffff;
+  background-color: #ffffff;
   border: 1px #000 solid;
 }
 
-.topic-row{
+.topic-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.topic-fomo{
-  height: 100%;
-}
 
 
 
-#fomo-end{
+#fomo-end {
   background-color: #D3473C;
 }
 
 #fomo-end h1,
 #fomo-end h2,
-#fomo-end p
-{
-color: #ffffff;
+#fomo-end p {
+  color: #ffffff;
+}
+
+#fomo-end a {
+  color: #000000;
+
 }
 
 #topic-fomo6 h4,
-#topic-fomo6 h1{
-color: #D3473C;
+#topic-fomo6 h1 {
+  color: #D3473C;
 }
 
 #list-fomo {
-  list-style: none; /* Rimuove i punti elenco predefiniti */
-   /* Rimuove il padding predefinito */
+  list-style: none;
+  /* Rimuove i punti elenco predefiniti */
+  /* Rimuove il padding predefinito */
 }
 
 #list-fomo li {
-  margin-bottom: 5px; /* Aggiunge un po' di spazio tra gli elementi della lista */
+  margin-bottom: 5px;
+  /* Aggiunge un po' di spazio tra gli elementi della lista */
   color: #000;
 }
 
 
 #list-fomo i.fas.fa-square {
-  display: inline-block; 
-  vertical-align: baseline; 
-  border-radius: 2px; 
+  display: inline-block;
+  vertical-align: baseline;
+  border-radius: 2px;
   margin-right: 5px;
 }
 
 .legenda.legenda-bordeaux {
-  background-color:#8A3933;
- 
-}
-.legenda.legenda-red {
-  background-color:#D3473C;
+  background-color: #8A3933;
 
 }
-.legenda.legenda-black {
-  background-color:#000000;
+
+.legenda.legenda-red {
+  background-color: #D3473C;
+
 }
+
+.legenda.legenda-black {
+  background-color: #000000;
+}
+
 .legenda.legenda-gray {
-  background-color:#262626;
+  background-color: #262626;
 }
 
 
 .legenda.legenda-white {
-  background-color:#ffffff;
+  background-color: #ffffff;
   border: 1px #000 solid;
 }
 
-.text-icon h2, 
-.text-icon h3{
+.text-icon h2,
+.text-icon h3 {
   color: #fff;
 }
 
@@ -685,7 +708,7 @@ color: #D3473C;
 @media (min-width: 768px) {
 
 
- .container-pages a {
+  .container-pages a {
     font-size: 1rem;
     line-height: 1rem;
     font-weight: 400;
@@ -699,7 +722,7 @@ color: #D3473C;
     height: 15vh;
   }
 
-  
+
 
   .top-img_2,
   .top-img_3 {
@@ -712,7 +735,7 @@ color: #D3473C;
 
 
 @media (min-width: 992px) {
-/*
+  /*
 .topic {
   /* padding-block-end: 40px;
   height: 100%;
@@ -721,19 +744,21 @@ color: #D3473C;
 
 
   .top-img {
-height: auto;  }
+    height: auto;
+  }
 
   .index-col-fomo {
     border-inline-end: 2px #000 solid;
   }
 
-  
+
 
   .container-pages h4 {
-  line-height: 5.5rem;
-  font-size: 5.5rem;
-  font-weight: 700;
-}
+    line-height: 5.5rem;
+    font-size: 5.5rem;
+    font-weight: 700;
+    
+  }
 
 
 
@@ -765,7 +790,7 @@ height: auto;  }
 
   .link-lan_2,
   .link-lan_3 {
-     padding: 0px;
+    padding: 0px;
   }
 
 
@@ -801,12 +826,15 @@ height: auto;  }
     /* Percorso nuova immagine */
   }
 
-  .topic-light .link-lan_1 a, .topic-light .link-lan_4 a {
+  .topic-light .link-lan_1 a,
+  .topic-light .link-lan_4 a {
     color: #262626;
     background: #fff;
     border-color: #262626;
   }
-  .topic-light .link-lan_1 a:hover, .topic-light .link-lan_4 a:hover {
+
+  .topic-light .link-lan_1 a:hover,
+  .topic-light .link-lan_4 a:hover {
     color: #fff;
     background: #262626;
     border-color: #262626;
@@ -826,14 +854,14 @@ height: auto;  }
   .top-img_3 {
 
     height: 50svh;
-    object-fit: contain; 
+    object-fit: contain;
   }
 
   /* rettangolare su desktop */
   .top-img_1,
   .top-img_4 {
     aspect-ratio: 16/9;
-   max-height: 70svh;
+    max-height: 70svh;
   }
 
 
@@ -878,7 +906,7 @@ height: auto;  }
 
 
   /* Topic 2 e 3 */
-   .topic_left {
+  .topic_left {
     height: 100%;
   }
 
@@ -898,6 +926,7 @@ height: auto;  }
     text-align: left;
     padding: 10px 0;
   }
+
   .topic_left h3,
   .topic_left h3 {
     font-size: 2rem;
@@ -919,91 +948,104 @@ height: auto;  }
     padding: 40px;
   }
 
- 
+
 
   /* ---------------- FINE LANDING PAGE  DESKTOP ---------------- */
 
 
 
-/* ---------------- INIZIO ANSIA SOCIALE DESKTOP ---------------- */
+  /* ---------------- INIZIO ANSIA SOCIALE DESKTOP ---------------- */
 
 
 
 
 
-  
-.graph img{
-  max-width: 90%;
-  object-fit: contain;
-
-
+.icone-anx {
+  flex-direction: row;
 }
 
-.graph{
-display: flex;
-justify-content: center;
-align-items: center; 
+  .top-img.graph img {
+    max-width: 90%;
+    object-fit: contain;
+   
+
+  }
+
+  .graph {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
+  }
+
+
+
+
+
+  /* ---------------- FINE ANSIA SOCIALE DESKTOP ---------------- */
+
+
+
+
+
+  /* ---------------- INIZIO FOMO DESKTOP ---------------- */
+
+  .text-row1 {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-self: center;
+  }
+
+  .text-part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    padding: 20px 0;
+  }
+
+
+  .text-part2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 60%;
+    padding: 20px 40px;
+  }
+
+
+#fomo-end a {
+ 
+  padding: 0 40px;
 }
 
 
 
-
-
-/* ---------------- FINE ANSIA SOCIALE DESKTOP ---------------- */
-
-
-
-
-
-/* ---------------- INIZIO FOMO DESKTOP ---------------- */
-
-.text-row1 {
-display: flex;
-flex-direction: row;
-align-items: baseline;
-justify-self: center;
-}
-
-.text-part1{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 40%;
-  padding: 20px 0 ;
-}
-
-
-.text-part2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 60%;
-   padding:20px 40px;
-}
-
-/* ---------------- FINE FOMO DESKTOP ---------------- */
+  /* ---------------- FINE FOMO DESKTOP ---------------- */
 
 
 
 
 
-/* ---------------- INIZIO HIKIKO DESKTOP ---------------- */
+  /* ---------------- INIZIO HIKIKO DESKTOP ---------------- */
+
+   .link-lan{
+    padding: 40px;
+   }
+
+  /* ---------------- FINE HIKIKO DESKTOP ---------------- */
 
 
 
-/* ---------------- FINE HIKIKO DESKTOP ---------------- */
+
+  /* ---------------- INIZIO PROJECT DESKTOP ---------------- */
 
 
 
-
-/* ---------------- INIZIO PROJECT DESKTOP ---------------- */
-
-
-
-/* ---------------- FINE PROJECT DESKTOP ---------------- */
+  /* ---------------- FINE PROJECT DESKTOP ---------------- */
 
 }
 
@@ -1018,32 +1060,32 @@ justify-self: center;
   font-family: 'disto';
   src: url(font/disto_Light.woff) format('woff'),
     url(font/disto_Light.otf) format('opentype');
- font-weight: 300; 
- font-style: normal;
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'disto';
   src: url(font/disto_Regular.otf) format('woff'),
     url(font/disto_Regular.ttf) format('opentype');
- font-weight: 400; 
- font-style: normal;
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'disto';
   src: url(font/disto_Black.otf) format('woff'),
     url(font/disto_Black.ttf) format('opentype');
- font-weight: 900; 
- font-style: normal;
+  font-weight: 900;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'disto';
   src: url(font/disto_Bold.otf) format('woff'),
     url(font/disto_Bold.ttf) format('opentype');
- font-weight: 700; 
- font-style: normal;
+  font-weight: 700;
+  font-style: normal;
 }
 
 
