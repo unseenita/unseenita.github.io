@@ -402,6 +402,12 @@ body {
 
 }
 
+.ansia-hr-b {
+  color: #000000 solid;
+  height: 2px;
+
+
+}
 
 
 .text-icon h1,
@@ -456,13 +462,15 @@ body {
   height: 200px;
 }
 
-.graph img {
+
+.top-img.graph{
+  object-fit: contain;
   width: 100%;
   padding: 40px 15px;
   margin: 0;
-  height: 100%;
-}
 
+ 
+}
 .graph {
   display: flex;
   justify-content: center;
@@ -967,6 +975,7 @@ body {
   .top-img.graph img {
     max-width: 90%;
     object-fit: contain;
+    padding:40px 10px;
    
 
   }
@@ -1019,7 +1028,7 @@ body {
 
 #fomo-end a {
  
-  padding: 0 40px;
+  padding: 0;
 }
 
 
@@ -1035,6 +1044,19 @@ body {
    .link-lan{
     padding: 40px;
    }
+
+   #list-fomo{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   }
+
+   #list-fomo li{
+    padding: 0 10px;
+   }
+
 
   /* ---------------- FINE HIKIKO DESKTOP ---------------- */
 
