@@ -70,6 +70,7 @@ body {
   font-family: 'disto', sans-serif;
   margin: 0;
   padding: 0;
+
 }
 
 /* CONTAINER SEMPRE A TUTTA PAGINA */
@@ -259,6 +260,7 @@ body {
 
 .topic {
   padding-block-end: 40px;
+  padding-block-start: 40px;
   height: 100%;
 }
 
@@ -272,7 +274,7 @@ body {
 
 .top-img {
   width: 100%;
-  aspect-ratio: 1/1;
+ aspect-ratio: 1/1;
   /* quadrato su mobile */
   /* overflow: hidden; */
   display: flex;
@@ -290,6 +292,7 @@ body {
   display: block;
 
 }
+
 
 /*
 .top-img2 {
@@ -463,12 +466,12 @@ body {
 }
 
 
-.top-img.graph{
+.top-img.graph img{
   object-fit: contain;
   width: 100%;
-  padding: 40px 15px;
+  padding:15px;
   margin: 0;
-
+  
  
 }
 .graph {
@@ -528,37 +531,8 @@ body {
 /* ---------------- INIZIO PAG PROJECT MOBILE---------------- */
 
 
-#topic-unseen1,
-#topic-unseen2,
-#topic-unseen3,
-#topic-unseen4,
-#topic-unseen5 {
-  background-color: #262626;
-}
 
-#topic-unseen1 h1,
-#topic-unseen1 h2,
-#topic-unseen1 p,
-#topic-unseen1 a,
-#topic-unseen2 h1,
-#topic-unseen2 h2,
-#topic-unseen2 p,
-#topic-unseen2 a,
-#topic-unseen3 h1,
-#topic-unseen3 h2,
-#topic-unseen3 p,
-#topic-unseen3 a,
-#topic-unseen4 h1,
-#topic-unseen4 h2,
-#topic-unseen4 p,
-#topic-unseen4 a,
-#topic-unseen5 h1,
-#topic-unseen5 h2,
-#topic-unseen5 p,
-#topic-unseen5 a {
-  color: #ffffff !important;
 
-}
 
 
 
@@ -751,9 +725,6 @@ body {
 */
 
 
-  .top-img {
-    height: auto;
-  }
 
   .index-col-fomo {
     border-inline-end: 2px #000 solid;
@@ -786,7 +757,7 @@ body {
 
 
   /* ---------------- INIZIO LANDING PAGE DESKTOP---------------- */
-
+  
 
   .link-lan_1,
   .link-lan_4 {
@@ -955,7 +926,7 @@ body {
   .pag-text {
     padding: 40px;
   }
-
+ 
 
 
   /* ---------------- FINE LANDING PAGE  DESKTOP ---------------- */
@@ -1026,12 +997,40 @@ body {
   }
 
 
-#fomo-end a {
- 
-  padding: 0;
+
+
+.link-lan{
+  padding: 40px;
 }
 
 
+.top2-img {
+  width: 100%;
+  /* quadrato su mobile */
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #fff; */
+  padding: 40px;
+}
+
+.top2-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+
+}
+
+.top-img.top_foto img{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
 
   /* ---------------- FINE FOMO DESKTOP ---------------- */
 
@@ -1041,9 +1040,6 @@ body {
 
   /* ---------------- INIZIO HIKIKO DESKTOP ---------------- */
 
-   .link-lan{
-    padding: 40px;
-   }
 
    #list-fomo{
     list-style: none;
