@@ -643,6 +643,27 @@ body {
 }
 
 
+
+.top2-img {
+  width: 100%;
+  /* quadrato su mobile */
+  /* overflow: hidden; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: #fff; */
+  padding: 40px;
+}
+
+.top2-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+
+}
+
 /* ---------------- FINE FOMO MOBILE---------------- */
 
 
@@ -767,8 +788,8 @@ body {
 
   }
 
-  .link-lan_2,
-  .link-lan_3 {
+  .link-lan.link-lan_2,
+  .link-lan.link-lan_3 {
     padding: 0px;
   }
 
@@ -1004,25 +1025,6 @@ body {
 }
 
 
-.top2-img {
-  width: 100%;
-  /* quadrato su mobile */
-  /* overflow: hidden; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  /* background: #fff; */
-  padding: 40px;
-}
-
-.top2-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-  display: block;
-
-}
 
 .top-img.top_foto img{
   width: 100%;
