@@ -497,10 +497,13 @@ body {
 
 /* lista leggenda */
 
+
+
 .list-unstyled li {
   display: flex;
   align-items: center;
   color: #ffffff;
+ 
 
 }
 
